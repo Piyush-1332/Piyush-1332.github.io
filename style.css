@@ -1,0 +1,61 @@
+.bg-1{
+  background-image: url('bg4.jpg');
+  min-height: 600px;
+  background-size: cover;
+  background-position: relative;
+}
+#one{
+  position: absolute;
+  top: 290px;
+  left: 400px;
+  color: black;
+  font-family: sans-serif;
+}
+#link1{
+  color: black;
+  text-decoration: underline;
+}
+#one h1{
+  font-size: 55px;
+  font-weight: 600;
+}
+.btn-hire{
+  background-color: rgb(198, 232, 239);
+}
+.png1{
+  height: 20px;
+  margin-bottom: 5px;
+}
+.link1:hover{
+  color: inherit;
+}
+#navbarNavDropdown{
+  margin-left:35%;
+  height: 50px;
+}
+li{
+  border: .5px solid;
+  border-color:#303847  ;
+  text-align: center;
+  padding: 5px;
+  font-size:22px;
+  margin: 5px;
+}
+.bottom-btn{
+  background-color: red;
+  height: 50px;
+  width: 150px;
+  font-family: sans-serif;
+  border-radius: 50%;
+  color: white;
+  font-weight: bold;
+  position: fixed;
+  bottom: 15px;
+  right: 20px;
+  cursor: pointer;
+  border:0px;
+}
+.Img img{
+  width: 500px;
+  height: 700px;
+}

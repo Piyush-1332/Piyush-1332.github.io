@@ -4,10 +4,13 @@
   background-size: cover;
   background-position: relative;
 }
+.nav-link{
+  color:white;
+}
 #one{
   position: absolute;
-  top: 290px;
-  left: 400px;
+  top: 40%;
+  left: 23%;
   color: black;
   font-family: sans-serif;
 }

@@ -45,7 +45,7 @@ li{
   margin: 5px;
 }
 .bottom-btn{
-  background-color: red;
+  background-color: #f04;
   height: 50px;
   width: 150px;
   font-family: sans-serif;
@@ -58,7 +58,50 @@ li{
   cursor: pointer;
   border:0px;
 }
+
 .Img img{
-  width: 500px;
-  height: 700px;
+  width: 400px;
+  height: 500px;
+  border-radius: 10px;
+}
+.About{
+  margin-top: 50px;
+  font-family: sans-serif;
+}
+.contactimg{
+  height: 150px;
+  width: 150px;
+  border-radius: 100%;
+}
+.mess{
+  margin-top: 10px;
+}
+#color{
+  background: rgba(0,0,0,.06);
+}
+.sendbtn{
+  margin-top: 2%;
+  float:right;
+  border-radius: 20%;
+  background-color: inherit;
+  cursor: pointer;
+  color: #f04;
+  padding:10px;
+  border:1px solid #f04;
+}
+#links li{
+  border: 0px;
+  display: inline;
+  font-size: 11px;
+  color: #818181;
+  font-family:sans-serif;
+
+}
+.center{
+  text-align: center;
+  width: 100%;
+ padding-top: 50px;
+  height: 137px;
+  background: #f3f3f3;
+  margin-top: .5%;
 }

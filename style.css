@@ -9,10 +9,12 @@
 }
 #one{
   position: absolute;
-  top: 40%;
-  left: 23%;
+  top: 32%;
+  left: 24%;
+  max-width: 50%;
   color: black;
   font-family: sans-serif;
+  right: 24%;
 }
 #link1{
   color: black;
@@ -32,9 +34,9 @@
 .link1:hover{
   color: inherit;
 }
-#navbarNavDropdown{
-  margin-left:35%;
-  height: 50px;
+.place{
+  margin-left: 35%;
+  margin-right: 30%;
 }
 li{
   border: .5px solid;
@@ -44,7 +46,7 @@ li{
   font-size:22px;
   margin: 5px;
 }
-.bottom-btn{
+/* .bottom-btn{
   background-color: #f04;
   height: 50px;
   width: 150px;
@@ -57,7 +59,7 @@ li{
   right: 20px;
   cursor: pointer;
   border:0px;
-}
+} */
 
 .Img img{
   width: 400px;
@@ -101,7 +103,7 @@ li{
   text-align: center;
   width: 100%;
  padding-top: 50px;
-  height: 137x;px;
+  height: 137px;
   background: #f3f3f3;
   margin-top: .5%;
 }
@@ -118,10 +120,21 @@ li{
 .logo{
   height: 50px;
 }
-#social{
+.smpic{
 position: relative;
 left: 25%;
 }
 .details{
+  position: relative;
   margin-top: 2%;
+  left: 26%;
+}
+.col-xs-4{
+  padding: 2px 2px;
+}
+.git{
+  color:#818181;
+}
+html{
+  scroll-behavior: smooth;
 }

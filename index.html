@@ -3,19 +3,20 @@
     <title>Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <nav class="nav navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNavDropdown">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link" href="#">Home</a>
+            <a class="nav-link" href="#home">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">About Me</a>
+            <a class="nav-link" href="#two">About Me</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">My Work</a>
@@ -27,7 +28,7 @@
       </div>
     </nav>
 
-    <div class="bg-1">
+    <div class="bg-1" id="home">
       <div class="container" id="one">
           <h1>Front-End Web Developer</h1>
           <p size=20>If you are a business seeking a web presence or an employer looking to hire, you can get in touch with me <a href="contact" id="link1">here</a>.</p>
@@ -42,7 +43,7 @@
   <button class="bottom-btn enve">Contact Me</button>
 <br><br><br><br>
 
-  <div class="container" >
+  <div class="container" id="two">
     <h1 align=center>About Me</h1>
     <div class="row">
       <div class="col-sm-6">
@@ -57,14 +58,27 @@
     </div>
   </div><br><br><br>
 
-  <div id="map">
-
-  </div><br>
+  <div id="map"></div><br>
 
   <div class="container">
     <div class="row">
-      <div class="col">
-        <!-- <img src="pic.jpg" class="contactimg" alt=""> -->
+      <div class="col" id="social">
+        <div class="smpic">
+          <img src="smpic.jpg" alt="profile" class="smcir">
+        </div>
+        <div class="details">
+          <div class="row">
+            <div class="col-xs-3">
+              <a href="https://www.facebook.com/piyush1332"><img src="fb.png" alt="" class="logo"></a>
+            </div>
+            <div class="col-xs-3">
+              <a href="https://www.instagram.com/ps.1332_official/"><img src="inst.jfif" alt="" class="logo"></a>
+            </div>
+            <div class="col-xs-3">
+              <a href="https://twitter.com/roxx_piyush"><img src="twitter.png" alt="" class="logo"></a>
+            </div>
+          </div>
+        </div>
       </div>
       <div class="col">
         <form class="form-group" action="index.html" method="post">
@@ -85,10 +99,11 @@
       </div>
     </div>
   </div>
+
 <div class="center" id="links">
   <ul>
     <li>piyush1332@gmail.com</li>
-    <li>GITHUB</li>
+    <li><a href="https://github.com/Piyush-1332">GITHUB</a></li>
   </ul>
 </div>
 <script type="text/javascript" src="script.js"></script>

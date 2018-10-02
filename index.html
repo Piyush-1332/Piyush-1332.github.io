@@ -5,7 +5,11 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
   </head>
-  <body>
+  <div id="loader">
+
+  </div>
+  <body onload="myFun()" style="margin:0px;">
+    <div id="myDiv" style="display:none;" class="animate-bottom">
     <nav class="nav navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -31,7 +35,7 @@
     <div class="bg-1" id="home">
       <div class="container" id="one">
           <h1>Front-End Web Developer</h1>
-          <p size=20>If you are a business seeking a web presence or an employer looking to hire, you can get in touch with me <a href="contact" id="link1">here</a>.</p>
+          <p size=20>If you are a business seeking a web presence or an employer looking to hire, you can get in touch with me here</p>
           <a href="#four" class="btn btn-hire btn-lg link1"><b>I'm looking to hire<b>
             <img src="arrow.png" alt="crashed" class="png1">
           </a>
@@ -44,7 +48,7 @@
 <br><br><br><br>
 
   <div class="container" id="two">
-    <h1 align=center>About Me</h1>
+    <h1 align=center>About Me</h1><br><br>
     <div class="row">
       <div class="col-sm-6">
         <div class="Img">
@@ -97,7 +101,7 @@
       </div>
     </div>
   </section>
-<br>
+<br><br>
 
 
   <div id="map"></div><br>
@@ -148,10 +152,12 @@
     <li><a href="https://github.com/Piyush-1332"class="git">GITHUB</a></li>
   </ul>
 </div>
+</div>
+<script type="text/javascript" src="script.js"></script>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-<script type="text/javascript" src="script.js"></script>
+
 <script src="https://maps.googleapis.com/maps/api/js?callback=myMap"></script>
   </body>
 </html>

@@ -6,3 +6,10 @@ function myMap() {
     var marker = new google.maps.Marker({position: myCenter});
     marker.setMap(map)
   }
+
+function myFun() {
+  var myvar=setTimeout(function showpage() {
+    document.getElementById('loader').style.display = 'none'
+    document.getElementById('myDiv').style.display = 'block'
+  }, 3000);
+}

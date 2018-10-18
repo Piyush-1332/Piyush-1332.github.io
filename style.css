@@ -33,17 +33,13 @@
 .link1:hover{
   color: inherit;
 }
-.place{
-  margin-left: 35%;
-  margin-right: 30%;
-}
+
 li{
   border: .5px solid;
   border-color:#303847  ;
   text-align: center;
   padding: 5px;
   font-size:22px;
-  margin: 5px;
 }
 /* .bottom-btn{
   background-color: #f04;

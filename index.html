@@ -2,244 +2,252 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>AEROKRISHI</title>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="mobile-web-app-capable" content="yes">
-    <link rel="apple-touch-icon" sizes="192x192" href="index.png">
-    <link rel="manifest" href="manifest.json">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
-    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
-		<link rel="icon" href="favicon.png" type="image/x-icon">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-    <link rel="stylesheet" type="text/css" href="my.css">
-    <link rel="stylesheet" type="text/css" href="button.css">
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="stylesheet" type="text/css" href="scrollanimation.css">
-    <link rel="stylesheet" href="navstyle.css">
-    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Federo" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Satisfy" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="footer.css">
+    <title>Aerokrishi</title>
+    <link rel="stylesheet" href="new.css">
+    <link href="https://fonts.googleapis.com/css?family=Oleo+Script:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Teko:400,700" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
+    <script type="text/javascript" src="lightbox-plus-jquery.min.js"></script>
+    <link rel="stylesheet" href="lightbox.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Charm" rel="stylesheet">
+    <script type="text/javascript">
+    $(document).ready(function() {
+      // Transition effect for navbar
+      $(window).scroll(function() {
+        // checks if window is scrolled more than 500px, adds/removes solid class
+        if($(this).scrollTop() > 70) {
+            $('.navbar').addClass('solid');
+            $('.navbar').removeClass('navbar-light');
+        } else {
+            $('.navbar').removeClass('solid');
+            $('.navbar').addClass('navbar-light');
+        }
+      });
+});
+    </script>
 
   </head>
   <body>
-  <div class="home">
-    <nav id="navbar" class="navbar navbar-expand-lg navbar-dark transparent">
-    <a class="navbar-brand" href="index.html">
+<div class="bg1">
+    <nav id="navbar" class="navbar navbar-expand-lg navbar-light fixed-top navbar-fixed-top">
       <img src="index.png" height="50px" width="50px"></a>
-      <a class="navbar-brand mr-auto navfont" href="index.html">AEROKRISHI</a>
-      <button class="navbar-toggler navbar-toggler-right navbutton fixbutton" type="button" data-toggle="modal" data-backdrop="false" data-target="#sidenav" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
+      <a class="navbar-brand ml-auto navfont" href="index.html">AEROKRISHI</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item active">
-            <a class="nav-link navfont" href="index.html">HOME <span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="#">HOME</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link navfont" href="comingsoon.html">WHAT WE DO</a>
+            <a class="nav-link" href="#">ABOUT</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link navfont" href="comingsoon.html">WHO WE ARE</a>
+            <a class="nav-link" href="#">PRODUCT</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link navfont" href="comingsoon.html">SERVICES</a>
+            <a class="nav-link" href="#">GALLERY</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link navfont" href="gallery.html">Gallery</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link navfont" href="comingsoon.html">Blog</a>
+            <a class="nav-link" href="#">CONTACT</a>
           </li>
         </ul>
       </div>
     </nav>
 
-    <div class="sidenav bg-faded p-4" id="sidenav">
-        <ul class="navbar-nav">
-          <li class="nav-item active">
-            <a class="nav-link" href="#" data-toggle="modal" data-backdrop="false" data-target="#sidenav"><i class="fa fa-window-close" style="font-size:24px ; color:white;"></i></a>
-          </li>
-          <li class="nav-item active">
-            <a class="nav-link " style="color: white;" href="comingsoon.html">HOME <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" style="color: white;" href="comingsoon.html">WHAT WE DO</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" style="color: white;" href="comingsoon.html">WHO WE ARE</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" style="color: white;" href="comingsoon.html">SERVICES</a>
-          </li>
-          <li class="nav-item">
-          <a class="nav-link" href="comingsoon.html">Blog</a>
-        </li>
-        </ul>
+
+  <div class="home">
+    <h1>Re-Connecting Farming to local Communities</h1>
+    <hr>
+    <h3>We Grow Fresh, So you Eat Fresh</h3>
+  </div>
+</div><br><br>
+
+  <div class="about container">
+    <h2 class="head1">ABOUT US</h2>
+    <br><br>
+    <div class="row">
+      <div class="col-sm-6">
+        <img class="img" src="gallery/7.jpeg" alt="">
       </div>
-
-
-
-      <div class="container intro text-center bg-my animatable bounceInLeft"style="color:white;margin-top:100px;height:auto;">
-        <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt </h3>
+      <div class="col-sm-6 text">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </p>
       </div>
-
-      <div class="container container2 ">
-        <div class="box">
-          <div class="widget">
-            <div class="text-1 animatable fadeIn">
-              <p>Lorem Ipsum</p>
-              <p>Lorem Ipsum</p>
-            </div>
-            <div class="text-2 animatable fadeIn">
-              <p>Lorem Ipsum</p>
-              <p>Lorem Ipsum</p>
-            </div>
-            <div class="text-3 animatable fadeIn">
-              <p>Lorem Ipsum</p>
-              <p>Lorem Ipsum</p>
-            </div>
-            <div class="text-4 animatable fadeIn">
-              <p>Lorem Ipsum</p>
-              <p>Lorem Ipsum</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      </div>
-
-
-      <div class="contactform row" >
-      <div class="col-lg-6">
-        <div class="container1">
-          <h1>Get Your Own Farm Now</h1>
-          <h2>Contact Us</h2>
-          <form class="form" method="post">
-
-            <fieldset class="form-fieldset ui-input __first">
-              <input type="text" id="fullname" tabindex="0" />
-              <label for="fullname">
-                <span data-text="Full Name">Full Name</span>
-              </label>
-            </fieldset>
-
-            <fieldset class="form-fieldset ui-input __first">
-              <input type="text" id="phone" tabindex="0" />
-              <label for="phone">
-                <span data-text="Phone">Phone</span>
-              </label>
-            </fieldset>
-
-            <fieldset class="form-fieldset ui-input __second">
-              <input type="email" id="email" tabindex="0" />
-              <label for="email">
-                <span data-text="E-mail Address">E-mail Address</span>
-              </label>
-            </fieldset>
-
-            <fieldset class="form-fieldset ui-input __first">
-              <input type="text" id="location" tabindex="0" />
-              <label for="location">
-                <span data-text="Location">Location</span>
-              </label>
-            </fieldset>
-
-            <fieldset class="form-fieldset ui-input __second">
-              <textarea type="text" id="Message"></textarea>
-              <label for="Message">
-                <span data-text="Your Message">Your Message</span>
-              </label>
-            </fieldset>
-
-            <div class="form-footer">
-              <button id="submit-btn" class="btn btn-primary">Submit</button>
-            </div>
-          </form>
-        </div>
-      </div>
-
-        <div class="col-lg-2">
-          <img src="AEROKRISHI-pitch-deck-1024x576.jpg"/ style="padding-bottom:50px;">
-        </div>
-      </div>
-
-
-      <div class="footer">
-        <footer class="flex-rw">
-
-          <ul class="footer-list-top " >
-            <li class="animatable bounceIn">
-              <h4 class="footer-list-header">About Aerokrishi</h4></li>
-            <li class="animatable bounceInLeft"><a href='/shop/about-mission' class="generic-anchor footer-list-anchor" itemprop="significantLink">GET TO KNOW US</a></li>
-            <li class="animatable bounceInLeft"><a href='/promos.html' class="generic-anchor footer-list-anchor" itemprop="significantLink">PROMOS</a></li>
-            <li class="animatable bounceInLeft"><a href='/retailers/new-retailers.html' class="generic-anchor footer-list-anchor" itemprop="significantLink">Lorem Ipsum</a></li>
-
-            <li class="animatable bounceInLeft"><a href='/job-openings.html' itemprop="significantLink" class="generic-anchor footer-list-anchor">Lorem Ipsum</a></li>
-
-            <li class="animatable bounceInLeft"><a href='/shop/about-show-schedule' class="generic-anchor footer-list-anchor" itemprop="significantLink">Lorem Ipsum</a></li>
-          </ul>
-          <ul class="footer-list-top">
-            <li class="animatable bounceIn">
-              <h4 class="footer-list-header">Our Products</h4></li>
-
-
-            <li class="animatable moveUp"><a href='/Angels/cat/id/70' class="generic-anchor footer-list-anchor">Lorem Ipsum</a></li>
-            <li class="animatable moveUp"><a href='/Home-Decor/cat/id/64' class="generic-anchor footer-list-anchor">Lorem Ipsum</a></li>
-            <li class="animatable moveUp"><a href='/Mugs/cat/id/32' class="generic-anchor footer-list-anchor">Lorem Ipsum</a></li>
-            <li class="animatable moveUp"><a href='/Pet-Lover/cat/id/108' class="generic-anchor footer-list-anchor">Lorem Ipsum</a></li>
-            <li class="animatable moveUp"><a href='/Ladies-Accessories/cat/id/117' class="generic-anchor footer-list-anchor" target="_blank">Lorem Ipsum</a></li>
-          </ul>
-          <ul class="footer-list-top">
-            <li class="animatable bounceIn" class="animatable bounceIn" id='help'>
-              <h4 class="footer-list-header">Please Help Me</h4></li>
-            <li class="animatable bounceInRight"><a href='/shop/about-contact' class="generic-anchor footer-list-anchor" itemprop="significantLink">CONTACT</a></li>
-            <li class="animatable bounceInRight"><a href='/faq.html' class="generic-anchor footer-list-anchor" itemprop="significantLink">FAQ</a></li>
-            <li class="animatable bounceInRight" id='find-a-store'><a href='/shop/store-locator' class="generic-anchor footer-list-anchor" itemprop="significantLink">Office</a></li>
-            <li class="animatable bounceInRight" id='user-registration'><a href='/shop/user-registration?URL=' class="generic-anchor footer-list-anchor" itemprop="significantLink">Lorem Ipsum</a></li>
-            <li class="animatable bounceInRight" id='order-tracking'><a href='/shop/order-status' itemprop="significantLink" class="generic-anchor footer-list-anchor">Lorem Ipsum</a></li>
-          </ul>
-          <section class="footer-social-section flex-rw fadeInUp animatable ">
-              <span class="footer-social-overlap footer-social-connect">
-              CONNECT <span class="footer-social-small">with</span> US
-              </span>
-              <span class="footer-social-overlap footer-social-icons-wrapper">
-              <a href="https://www.pinterest.com/paviliongift/" class="generic-anchor" target="_blank" title="Pinterest" itemprop="significantLink"><i class="fa fa-pinterest"></i></a>
-              <a href="https://www.facebook.com/paviliongift" class="generic-anchor" target="_blank" title="Facebook" itemprop="significantLink"><i class="fa fa-facebook"></i></a>
-              <a href="https://twitter.com/PavilionGiftCo" class="generic-anchor" target="_blank" title="Twitter" itemprop="significantLink"><i class="fa fa-twitter"></i></a>
-              <a href="http://instagram.com/paviliongiftcompany" class="generic-anchor" target="_blank" title="Instagram" itemprop="significantLink"><i class="fa fa-instagram"></i></a>
-              <a href="https://www.youtube.com/channel/UCYgUODvd0qXbu_LkUWpTVEg" class="generic-anchor" target="_blank" title="Youtube" itemprop="significantLink"><i class="fa fa-youtube"></i></a>
-              <a href="https://plus.google.com/+Paviliongift/posts" class="generic-anchor" target="_blank" title="Google Plus" itemprop="significantLink"><i class="fa fa-google-plus"></i></a>
-              </span>
-          </section>
-          <section class="footer-bottom-section flex-rw">
-        <div class="footer-bottom-wrapper fadeInUp animatable">
-        <i class="fa fa-copyright" role="copyright">
-
-        </i> 2018 Aerokrishi in <address class="footer-address" role="company address">Sector-105, Noida</address><span class="footer-bottom-rights"> - All Rights Reserved - </span>
-            </div>
-            <div class="footer-bottom-wrapper fadeInUp animatable">
-            <a href="/terms-of-use.html" class="generic-anchor" rel="nofollow">Terms</a> | <a href="/privacy-policy.html" class="generic-anchor" rel="nofollow">Privacy</a>
+    </div>
+  </div>
+<br><br>
+  <div class="green">
+<div class="product"><br><br>
+    <h2 class="head1">OUR PRODUCT</h2>
+    <br><br>
+    <div class="container">
+      <div class="container">
+              <div class="row">
+                <div class="col-sm-4">
+                  <div class="design-content">
+                    <img src="gallery/2.jpeg" alt="">
+                    <h2 style="color:#46f249;">Hyperlocal Hybrid farms</h2>
+                    <p>Use of fish to provide nutrition to plants by a fusion of multiple techniques like aquaponics, hydroponics and aeroponics.</p>
+                </div>
               </div>
-          </section>
-        </footer>
+                  <div class="col-sm-4">
+                    <div class="design-content">
+                      <img src="gallery/15.jpeg" alt="">
+                      <h2 style="color:#46f249;">Faster and independent crop cycles</h2>
+                      <p>Crops can be Grown without considering terrain and climate</p>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="design-content">
+                      <img src="gallery/5.jpeg" alt="">
+                      <h2 style="color:#46f249;">Electronically controlled and monitored growth</h2>
+                      <p>Automated with top notch Technology and Alexa enabled with voice controll</p>
+
+                  </div>
+                </div>
+              </div>
+</div>
+  </div>
+</div>
+</div>
+<section class="gallery">
+  <h1 class="galh1">GALLERY</h1>
+<div id="hello" class="container">
+  <div class="row">
+    <div class="col-sm-4">
+    <a href="gallery/1.jpeg" data-lightbox="mygallery"><img class="gal-view" id="imga" id="imga" src="gallery/1.jpeg" alt="Error"></a>
+    </div>
+    <div class="col-sm-4">
+    <a href="gallery/2.jpeg" data-lightbox="mygallery"><img class="gal-view" id="imga" src="gallery/2.jpeg" alt="Error"></a>
+    </div>
+    <div class="col-sm-4">
+    <a href="gallery/3.jpeg" data-lightbox="mygallery"><img class="gal-view" id="imga" src="gallery/3.jpeg" alt="Error"></a>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-sm-4">
+    <a href="gallery/4.jpeg" data-lightbox="mygallery"><img class="gal-view" id="imga" src="gallery/4.jpeg" alt="Error"></a>
+    </div>
+    <div class="col-sm-4">
+    <a href="gallery/5.jpeg" data-lightbox="mygallery"><img class="gal-view" id="imga" src="gallery/5.jpeg" alt="Error"></a>
+    </div>
+    <div class="col-sm-4">
+    <a href="gallery/6.jpeg" data-lightbox="mygallery"><img class="gal-view" id="imga" src="gallery/6.jpeg" alt="Error"></a>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-4">
+    <a href="gallery/7.jpeg" data-lightbox="mygallery"><img class="gal-view" id="imga" src="gallery/7.jpeg" alt="Error"></a>
+    </div>
+    <div class="col-sm-4">
+    <a href="gallery/8.jpeg" data-lightbox="mygallery"><img class="gal-view" id="imga" src="gallery/8.jpeg" alt="Error"></a>
+    </div>
+    <div class="col-sm-4">
+    <a href="gallery/9.jpeg" data-lightbox="mygallery"><img class="gal-view" id="imga" src="gallery/9.jpeg" alt="Error"></a>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-4">
+      <a href="gallery/10.jpeg" data-lightbox="mygallery"><img class="gal-view" id="imga" src="gallery/10.jpeg" alt="Error"></a>
+    </div>
+    <div class="col-sm-4">
+    <a href="gallery/11.jpeg" id="imga" data-lightbox="mygallery"><img class="gal-view" id="imga" src="gallery/11.jpeg" alt="Error"></a>
+    </div>
+    <div class="col-sm-4">
+    <a href="gallery/12.jpeg" data-lightbox="mygallery"><img class="gal-view" id="imga" src="gallery/12.jpeg" alt="Error"></a>
+    </div>
+  </div>
+    <div class="row">
+      <div class="col-sm-4">
+      <a href="gallery/13.jpeg" data-lightbox="mygallery"><img class="gal-view" id="imga" src="gallery/13.jpeg" alt="Error"></a>
       </div>
+      <div class="col-sm-4">
+      <a href="gallery/14.jpeg" data-lightbox="mygallery"><img class="gal-view" id="imga" src="gallery/14.jpeg" alt="Error"></a>
+      </div>
+      <div class="col-sm-4">
+      <a href="gallery/15.jpeg" data-lightbox="mygallery"><img class="gal-view" id="imga" src="gallery/15.jpeg" alt="Error"></a>
+      </div>
+    </div>
+</div>
+</section>
+<br><br>
+
+<section id="contact">
 
 
+			<div class="section-content">
+				<h1 class="section-header">Get in <span class="content-header wow fadeIn " data-wow-delay="0.2s" data-wow-duration="2s"> Touch with us</span></h1>
+				<h3>Breathe Green Today , You are just a call Away..</h3>
+			</div>
+			<div class="contact-section">
+			<div class="container">
+				<form>
+          <div class="row">
+					<div class="col-md-6 form-line">
+			  			<div class="form-group">
+			  				<label for="exampleInputUsername">Your name</label>
+					    	<input type="text" class="form-control" id="" placeholder=" Enter Name">
+				  		</div>
+				  		<div class="form-group">
+					    	<label for="exampleInputEmail">Email Address</label>
+					    	<input type="email" class="form-control" id="exampleInputEmail" placeholder=" Enter Email id">
+					  	</div>
+					  	<div class="form-group">
+					    	<label for="telephone">Mobile No.</label>
+					    	<input type="tel" class="form-control" id="telephone" placeholder=" Enter 10-digit mobile no.">
+			  			</div>
+			  		</div>
+			  		<div class="col-md-6">
+			  			<div class="form-group">
+			  				<label for ="description"> Message</label>
+			  			 	<textarea  class="form-control" id="description" placeholder="Enter Your Message"></textarea>
+			  			</div>
+			  			<div>
+			  				<button type="submit" class="but submit"><i class="fa fa-paper-plane" aria-hidden="true"></i>  Send Message</button>
+			  			</div>
+          </div>
+					</div>
+				</form>
+			</div>
+		</section>
 
 
+    <!-- Footer -->
+    	<section id="footer">
+    		<div class="container">
+    			<div class="row">
+    				<div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-5">
+    					<ul class="list-unstyled list-inline social text-center">
+    						<li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-facebook"></i></a></li>
+    						<li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-twitter"></i></a></li>
+    						<li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-instagram"></i></a></li>
+    						<li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-google-plus"></i></a></li>
+    						<li class="list-inline-item"><a href="javascript:void();" target="_blank"><i class="fa fa-envelope"></i></a></li>
+    					</ul>
+    				</div>
+    				</hr>
+    			</div>
+    			<div class="row">
+    				<div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center text-white">
+    					<p class="h6">&copy All right Reversed.<a class="text-green ml-2" href="https://www.sunlimetech.com" target="_blank">AeroKrishi</a></p>
+    				</div>
+    				</hr>
+    			</div>
+    		</div>
+    	</section>
 
-    <script src="https://code.jquery.com/jquery-3.3.1.js"
-            integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
-            crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-    <script src="index.js" ></script>
+<script type="text/javascript">
+
+</script>
+<script src="https://code.jquery.com/jquery-3.1.0.js" ></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
   </body>
 </html>
